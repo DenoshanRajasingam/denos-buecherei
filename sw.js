@@ -8,7 +8,7 @@
  */
 'use strict';
 
-const VERSION = '4ec07eec72d9';
+const VERSION = '3dd892c66df3';
 const GERUEST_PRAEFIX = 'geruest-';
 const GERUEST_CACHE = GERUEST_PRAEFIX + VERSION;
 const BUCH_PRAEFIX = 'buch-'; // gleich wie CACHE_PRAEFIX in core/offline.ts
