@@ -1,1 +1,0 @@
-import{D as Pr,Q as g,S as N,vt as we}from"./main-U6ROSKRU.js";function w(t){t||(t=g(we));let i=new N(e=>{if(t.destroyed){e.next();return}return t.onDestroy(e.next.bind(e))});return e=>e.pipe(Pr(i))}export{w as t};
