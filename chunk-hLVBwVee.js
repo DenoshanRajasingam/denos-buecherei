@@ -1,0 +1,1 @@
+import{a as Nr,b as ur}from"./chunk-B-buU76r.js";var t=1;var r=4;var i={bg:`wiese`,c:[`ayleen`,`sienna`],fx:`wolken`,h:`froh`};function c(e){return!e||e.typ===`titel`?ur.cover():Nr({n:t,mo:r,b:e.b??i})}export{c as t};
