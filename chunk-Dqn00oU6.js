@@ -1,0 +1,1 @@
+import{E as Pr,Z as g,_t as we,x as N}from"./main-NCTAR6L7.js";function w(t){t||(t=g(we));let i=new N(e=>{if(t.destroyed){e.next();return}return t.onDestroy(e.next.bind(e))});return e=>e.pipe(Pr(i))}export{w as t};

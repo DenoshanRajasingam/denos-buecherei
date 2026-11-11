@@ -8,7 +8,7 @@
  */
 'use strict';
 
-const VERSION = '11b5195cedca';
+const VERSION = '8ea8db3270c9';
 const GERUEST_PRAEFIX = 'geruest-';
 const GERUEST_CACHE = GERUEST_PRAEFIX + VERSION;
 const BUCH_PRAEFIX = 'buch-'; // gleich wie CACHE_PRAEFIX in core/offline.ts
@@ -20,7 +20,8 @@ const BUECHER = BASIS + 'buecher/';
 const LISTEN = [BUECHER + 'index.json', BUECHER + 'suche.json'];
 
 self.addEventListener('install', (ereignis) => {
-  ereignis.waitUntil(geruestSpeichern());
+  // Eine neue Version übernimmt sofort; die Seite lädt sich danach neu (core/service-worker.ts).
+  ereignis.waitUntil(geruestSpeichern().then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (ereignis) => {
