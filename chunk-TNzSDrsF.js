@@ -1,1 +1,0 @@
-import{E as wn,s as Gn}from"./chunk-DmhKCr5_.js";var t=1;var r=4;var i={bg:`wiese`,c:[`ayleen`,`sienna`],fx:`wolken`,h:`froh`};function c(e){return!e||e.typ===`titel`?wn.cover():Gn({n:t,mo:r,b:e.b??i})}export{c as t};
