@@ -8,7 +8,7 @@
  */
 'use strict';
 
-const VERSION = '2012bb4221ad';
+const VERSION = 'ed79169b0dbf';
 const GERUEST_PRAEFIX = 'geruest-';
 const GERUEST_CACHE = GERUEST_PRAEFIX + VERSION;
 const BUCH_PRAEFIX = 'buch-'; // gleich wie CACHE_PRAEFIX in core/offline.ts
@@ -50,7 +50,7 @@ async function alteGeruesteLoeschen() {
   await Promise.all(veraltet.map((n) => caches.delete(n)));
 }
 
-/** App-Gerüst, PDFs und alles Übrige: zuerst aus dem Cache, sonst aus dem Netz. Der Aufruf der Startseite liefert die gespeicherte index.html. */
+/** App-Gerüst und alles Übrige: zuerst aus dem Cache, sonst aus dem Netz. Der Aufruf der Startseite liefert die gespeicherte index.html. */
 async function cacheZuerst(anfrage) {
   const gespeichert = await caches.match(anfrage);
   return gespeichert ?? fetch(anfrage);
