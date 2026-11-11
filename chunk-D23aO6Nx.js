@@ -1,0 +1,1 @@
+import{c as Ur,s as Mr}from"./chunk-DOWwL_RH.js";var t=1;var r=4;var i={bg:`wiese`,c:[`ayleen`,`sienna`],fx:`wolken`,h:`froh`};function c(e){return!e||e.typ===`titel`?Mr.cover():Ur({n:t,mo:r,b:e.b??i})}export{c as t};
